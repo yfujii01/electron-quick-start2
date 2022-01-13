@@ -1,5 +1,30 @@
 # electron-quick-start
 
+## 実行方法
+
+```sh
+git clone https://github.com/yfujii01/electron-quick-start2.git
+
+cd electron-quick-start2
+
+npm install
+
+npm start
+```
+
+## 実行ファイル(exe)作成方法
+
+```sh
+# 作成ツールインストール
+npm install electron-packager -g
+
+# Windows用の実行ファイル作成コマンド
+electron-packager ./ --platform=win32 --arch=x64
+
+# 複数のプラットフォーム用もまとめて作成する場合のコマンド
+electron-packager ./ --all
+```
+
 **Clone and run for a quick way to see Electron in action.**
 
 This is a minimal Electron application based on the [Quick Start Guide](https://electronjs.org/docs/latest/tutorial/quick-start) within the Electron documentation.
